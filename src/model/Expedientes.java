@@ -92,4 +92,9 @@ public class Expedientes  implements java.io.Serializable {
     public void setNMascotas(Integer NMascotas) {
         this.NMascotas = NMascotas;
     }
+
+    @Override
+    public String toString() {
+        return nombre + " " + apellidos + ", DNI: " + dni;
+    }
 }

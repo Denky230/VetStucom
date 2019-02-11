@@ -31,7 +31,7 @@ public class Usuarios  implements java.io.Serializable {
        this.expedienteses = expedienteses;
     }
     public Usuarios(String nombre, String apellidos, String dni, String matricula, String pass, Integer tipoUsuario) {
-        this(nombre, apellidos, dni, matricula, pass, tipoUsuario, null, null);
+        this(nombre, apellidos, dni, matricula, pass, tipoUsuario, new Date(), null);
     }
     public Usuarios() {}
 
@@ -100,6 +100,6 @@ public class Usuarios  implements java.io.Serializable {
 
     @Override
     public String toString() {
-        return "id=" + id + ", nombre=" + nombre + ", apellidos=" + apellidos + ", dni=" + dni + ", matricula=" + matricula + ", pass=" + pass + ", tipoUsuario=" + tipoUsuario + ", ultimoAcceso=" + ultimoAcceso.toString();
+        return nombre + " " + apellidos + ", DNI: " + dni + ", username: " + matricula;
     }
 }
